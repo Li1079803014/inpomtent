@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			body{background: black;}
+		</style>
+	</head>
+	<body>
+		
+		<img src="img/img (1)/0.png"/>
+		<img src="img/img (1)/0.png"/>
+		<span style="color: white;">：</span>
+		<img src="img/img (1)/0.png"/>
+		<img src="img/img (1)/0.png"/>
+		<span style="color: white;">：</span>
+		<img src="img/img (1)/0.png"/>
+		<img src="img/img (1)/0.png"/>
+		
+		<script type="text/javascript">
+			function odate (n) {
+				if(n<10){
+					return '0'+n
+				}else{
+					return ''+n
+				}
+				
+			}
+			
+			var a=document.getElementsByTagName('img')
+			function  time() {
+				var b=new Date()
+				var c=odate(b.getHours())+odate(b.getMinutes())+odate(b.getSeconds());
+				for(var i=0;i<a.length;i++){
+					a[i].src='img/img (1)/'+c[i]+'.png'
+				}
+			}
+			setInterval(time,1000)
+			time()
+		</script>
+		
+	</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+//			var arr=[1,2,3,4]
+//			arr.push('ss')
+//			alert(arr)
+//			arr.unshift('666')
+//			arr.pop()
+//			arr.shift()
+//			alert(arr)
+//			indexof("mmm") 不存在输出-1
+
+			var a=[1,1,2,3,2,5,6,6,7,8,8,8,9];
+			function quChong(arry){
+				var temp=[];
+				for (var i=0;i<arry.length;i++) {
+					if (temp.indexOf(arry[i])==-1) {
+						temp.push(arry[i])
+					}
+				}
+				return temp
+			}
+			
+			alert(quChong(a))
+			
+		</script>
+		
+	</body>
+</html>

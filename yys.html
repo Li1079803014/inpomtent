@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{margin: 0;padding: 0;}
+			#box1{width: 1200px;height: 340px;background: orange;margin: 0 auto;display: block;}
+			#zz div{width: 100px;height: 60px;color: white;border: 2px solid white;font-size: 20px;
+			line-height: 60px;text-align: center;margin-left: 50px;margin-top: 16px;}
+			#zz{float: left;}
+			li{width: 650px;height: 340px;/*background: yellow;*/float: right;margin-left: 300px;display: none;}
+			.tu{float: left;}
+			.d{margin-top: 200px;}
+			.se{background: red;}
+		</style>
+	</head>
+	<body>
+		<div id="box1">
+			
+		<div id="zz">
+		<div>
+			晴明
+		</div>
+		<div>
+			神月
+		</div>
+		<div>
+			源博雅
+		</div>
+		<div>
+			八百比丘尼
+		</div>
+		</div>
+		<li style="display: block;">
+			<div class="tu">
+			<img src="js/zhujue_qingming_aee7c92.png"/>
+			</div>
+			<div class="d">
+				<p style="font-size: 20px;">晴明</p>
+				<hr /><hr />
+				<p>京都城中极具盛名的天才阴阳师
+却不知为何失去了自己的记忆
+等待着他的是寻回记忆的喜悦
+还是不堪回首的残忍真相</p>
+			</div>
+		</li>
+		<li>
+			<div class="tu">
+			<img src="js/zhujue_shenle_585e7f3.png"/>
+			</div>
+			<div class="d">
+				<p style="font-size: 20px;">神乐</p>
+				<hr /><hr />
+				<p>善良而沉默的神秘少女
+失忆后便跟随在晴明身边
+拥有敏锐的直觉和强大的通灵能力
+以及不为人知的过去</p>
+			</div>
+		</li>
+		<li>
+			<div class="tu">
+			<img src="js/zhujue_bqn_a6c9b81.png"/>
+			</div>
+			<div class="d">
+				<p style="font-size: 20px;">源博雅</p>
+				<hr /><hr />
+				<p>拥有皇室血统的贵族青年
+擅长弓术与结界之术
+性情孤傲爽直
+但似乎一直在寻找某个重要的人</p>
+			</div>
+		</li>
+		<li>
+			<div class="tu">
+			<img src="js/zhujue_yby_820fcd9.png"/>
+			</div>
+			<div class="d">
+				<p style="font-size: 20px;">八百比丘尼</p>
+				<hr /><hr />
+				<p>因误食人鱼肉而不老不死
+能力超凡的流浪占卜师
+一直在凤凰林中等待着
+占卜之梦预言的命运之人</p>
+			</div>
+		</li>
+		
+		</div>
+		
+		<script type="text/javascript">
+			var c=document.getElementById('zz')
+			var a=zz.getElementsByTagName('div');
+			var b=document.getElementsByTagName('li');
+			
+			for (var i=0; i<a.length;i++) {
+				a[i].inter=i
+				a[i].onclick=function(){
+					for (var i=0; i<a.length;i++) {
+						a[i].className='';
+						b[i].style.display='none';
+					}
+					this.className='se';
+					b[this.inter].style.display='block'
+				}
+			}
+		</script>
+	</body>
+</html>

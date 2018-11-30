@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			#box{
+				width: 200px;
+				height: 50px;
+				background: deeppink;
+				position: absolute;
+				display: none;
+				color: white;
+				
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			<h1>贾琰是笨蛋！</h1>
+		</div>
+		<script type="text/javascript">
+//			事件默认行为有哪些     	如何取消
+//			解决键盘卡顿问题
+			var dIv=document.getElementById('box')
+			document.oncontextmenu=function (ev) {
+				var oEvent=ev||event
+				dIv.style.display='block'
+				dIv.style.left=oEvent.clientX+'px'
+				dIv.style.top=oEvent.clientY+'px'
+				
+				return false
+			}
+			document.onclick=function () {
+				dIv.style.display='none'
+				
+			}
+		</script>
+	</body>
+</html>

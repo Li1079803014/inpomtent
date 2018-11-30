@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{margin: 0 ;padding: 0;}
+			.da{width: 600px;height: 300px;background-color: red;margin: 200px auto;
+			color: white;font-size: 20px;text-align: center;overflow: hidden;position: relative;
+			}
+			.da ul{width: 1800px;height: 300px;}
+			.da li{list-style: none;width: 600px;height:300px;float: left;line-height: 300px;}
+			.l1{background: pink;}
+			.l2{background: blue;}
+			label{width: 25px;height: 25px;background-color: #000;position: absolute;left: 0;bottom:10px;}
+			.la1{left: 50px;}
+			.la2{left: 100px;}
+			#asd1:checked~ul{margin-left: 0px;}
+			#asd1:checked~.la0{background-color: yellow;}
+			#asd2:checked~ul{margin-left: -600px;}
+			#asd2:checked~.la1{background-color: yellow;}
+			#asd3:checked~ul{margin-left: -1200px;}
+			#asd3:checked~.la2{background-color: yellow;}
+			ul{transition: all 1s;}
+			
+			
+		</style>
+		
+	</head>
+	<body>
+		<div class="da">
+			<input type="radio" name="asd" id="asd1" hidden/>
+			<label class="la0" for="asd1">1</label>
+			<input type="radio" name="asd" id="asd2" hidden/>
+			<label  class="la1" for="asd2">2</label>
+			<input type="radio" name="asd" id="asd3" hidden/>
+			<label  class="la2" for="asd3">3</label>
+			<ul>
+				<li class="l">one-tu</li>
+				<li class="l1">two-tu</li>
+				<li class="l2">thred-tu</li>
+			</ul>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<input type="text" name="op" id="op" value="" />
+		<input type="text" name="op2"" id="op2" value="" />
+		<input type="button" id="op3" value="加"/>
+		<input type="button" id="op9" value="减"/>
+		<input type="button" id="op8" value="乘"/>
+		<input type="button" id="op7" value="除"/>
+		<input type="text" name="op4" id="op4" value="" />
+		
+		
+		<script>
+			var a=document.getElementById('op');
+			var aa=document.getElementById('op2');
+			var aaa=document.getElementById('op3');
+			var aaaa=document.getElementById('op4');
+			var aaaaa=document.getElementById('op9')
+			var c=document.getElementById('op8')
+			var cc=document.getElementById('op7')
+			
+			
+			aaa.onclick=function(){
+				var b=parseInt(a.value);
+				var bb=parseInt(aa.value);
+				if (isNaN(b)) {
+					alert('尼玛的第一个输错了')
+				} else if (isNaN(bb)) {
+					alert('尼玛的第二个输错了')
+				}else{
+					tt(b+bb)
+				}
+			}
+			function tt(t){
+				aaaa.value=t
+			}
+			aaaaa.onclick=function(){
+				var b=parseInt(a.value);
+				var bb=parseInt(aa.value);
+				if (isNaN(b)) {
+					alert('尼玛的第一个输错了')
+				} else if (isNaN(bb)) {
+					alert('尼玛的第二个输错了')
+				}else{
+					tt(b-bb)
+				}
+			}
+			function tt(t){
+				aaaa.value=t
+			}
+			c.onclick=function(){
+				var b=parseInt(a.value);
+				var bb=parseInt(aa.value);
+				if (isNaN(b)) {
+					alert('尼玛的第一个输错了')
+				} else if (isNaN(bb)) {
+					alert('尼玛的第二个输错了')
+				}else{
+					tt(b*bb)
+				}
+			}
+			function tt(t){
+				aaaa.value=t
+			}
+			cc.onclick=function(){
+				var b=parseInt(a.value);
+				var bb=parseInt(aa.value);
+				if (isNaN(b)) {
+					alert('尼玛的第一个输错了')
+				} else if (isNaN(bb)) {
+					alert('尼玛的第二个输错了')
+				}else{
+					tt(b/bb)
+				}
+			}
+			function tt(t){
+				aaaa.value=t
+			}
+			
+		</script>
+	</body>
+</html>

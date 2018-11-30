@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			#pin{width: 300px;height: 500px;background-color: pink;}
+			 div{width: 75px;height: 75px;background: black;color: white;text-align: center;float: left;margin-left: 18px;margin-top: 18px;}
+			.box1{width: 280px;height: 100px;background: yellow;float: left;margin-left: 10px;margin-top: 10px;color: #000000;text-align: left;}
+			.active{background-color: blue;color: red;}
+		</style>
+	</head>
+	<body>
+		<div id="pin">
+			<!--<div id="kong">-->
+				<div>
+					<p>1</p>
+					<p>JAN</p>
+				</div>
+				<div>
+					<p>2</p>
+					<p>FER</p>
+				</div>
+				<div>
+					<p>3</p>
+					<p>MAR</p>
+				</div>
+				<div>
+					<p>4</p>
+					<p>APR</p>
+				</div>
+				<div>
+					<p>5</p>
+					<p>NAY</p>
+				</div>
+				<div>
+					<p>6</p>
+					<p>JUN</p>
+				</div>
+				<div>
+					<p>7</p>
+					<p>JUL</p>
+				</div>
+				<div>
+					<p>8</p>
+					<p>AUG</p>
+				</div>
+				<div>
+					<p>9</p>
+					<p>SEP</p>
+				</div>
+				<div>
+					<p>10</p>
+					<p>OCT</p>
+				</div>
+				<div>
+					<p>11</p>
+					<p>NOV</p>
+				</div>
+				<div>
+					<p>12</p>
+					<p>DEC</p>
+				</div>
+			<!--</div>-->
+			<section class="box1">
+				<h2>1月活动 大量的煎熬的哈客户端</h2>
+				<p></p>
+			</section>
+		</div>
+		
+		<script type="text/javascript">
+			var a=[
+			"fgdfbfyjn",
+			"fgdfbfyjn",
+			"fgdfbfyjn",
+			"fgdfbfyjn",
+			"fgdfbfyjn",
+			"fgdfbfyjn",
+			"fgdfbfyjn",
+			"fgdfbfyjn",
+			"fgdfbfyjn",
+			"fgdfbfyjn",
+			"fgdfbfyjn",
+			"fgdfbfyjn",
+			];
+			var pIn=document.getElementById('pin');
+			var kOng=document.getElementById('kong');
+			var bOx=pIn.getElementsByTagName('div');
+			var bOx1=document.getElementsByClassName('box1')[0];
+			
+			for(var i=0; i<bOx.length;i++){
+				bOx[i].index=i
+				bOx[i].onclick=function(){
+					for(var i=0; i<bOx.length;i++){
+						bOx[i].className='';
+						
+					}
+					this.className='active';
+					bOx1.innerHTML='<h2>'+(this.index+1)+'月活动</h2>'+
+									'<p>'+a[this.index]+'</p>'
+				}
+			}
+			
+		</script>
+	
+	</body>
+</html>

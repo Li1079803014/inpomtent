@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			#box{
+				width: 100px;
+				height: 100px;
+				display: none;
+				background: red;
+			}
+		</style>
+	</head>
+	<body>
+		<input type="button" name="btn" id="btn" value="显示" />
+		<div id="box">
+			
+		</div>
+		<script type="text/javascript">
+			var oBtn=document.getElementById('btn')
+			var oBox=document.getElementById('box')
+			oBtn.onclick=function  (ev) {
+				var oEvent=ev||event
+				oBox.style.display='block'
+				oEvent.cancelBubble=true
+				alert('a')
+			}
+			document.onclick=function (ev) {
+				oBox.style.display='none'
+				alert('b')
+			}
+		</script>
+	</body>
+</html>
